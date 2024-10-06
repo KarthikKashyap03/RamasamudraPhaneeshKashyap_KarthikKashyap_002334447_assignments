@@ -65,7 +65,7 @@ public class MainJFrame extends javax.swing.JFrame {
         person1.setLastName("Kashyap");
         person1.setSsn(4812009);
         person1.setAge(25);
-        person1.setHeight(6.1f);
+        person1.setHeight(6.2f);
         person1.setWeight(77.5);
         
         

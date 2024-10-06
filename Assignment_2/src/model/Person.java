@@ -11,19 +11,32 @@ import java.util.Date;
  */
 public class Person {
     private String firstName;
-    private int ssn;
+    private long ssn;
     private Address homeAddress;
     private Address workAddress;
-    private String licenseNumber;
+    private int age;
     private Date createdOn;
     private String lastName;
-    
-    public Person() {
-        this.createdOn = new Date();
-        this.workAddress = new Address();
-        this.homeAddress = new Address();
+     private float height;
+    private double weight;
+
+    public float getHeight() {
+        return height;
     }
-    
+
+    public void setHeight(float height) {
+        this.height = height;
+    }
+
+    public double getWeight() {
+        return weight;
+    }
+
+    public void setWeight(double weight) {
+        this.weight = weight;
+    }
+   
+
     public String getFirstName() {
         return firstName;
     }
@@ -32,28 +45,20 @@ public class Person {
         this.firstName = firstName;
     }
 
-    public String getLastName() {
-        return lastName;
-    }
-
-    public void setLastName(String lastName) {
-        this.lastName = lastName;
-    }
-
-    public int getSsn() {
+    public long getSsn() {
         return ssn;
     }
 
-    public void setSsn(int ssn) {
+    public void setSsn(long ssn) {
         this.ssn = ssn;
     }
-    
-    public String getLicenseNumber() {
-        return licenseNumber;
+
+    public Address getHomeAddress() {
+        return homeAddress;
     }
 
-    public void setLicenseNumber(String licenseNumber) {
-        this.licenseNumber = licenseNumber;
+    public void setHomeAddress(Address homeAddress) {
+        this.homeAddress = homeAddress;
     }
 
     public Address getWorkAddress() {
@@ -64,17 +69,37 @@ public class Person {
         this.workAddress = workAddress;
     }
 
-    public Address getHomeAddress() {
-        return homeAddress;
+    public int getAge() {
+        return age;
     }
 
-    public void setHomeAddress(Address homeAddress) {
-        this.homeAddress = homeAddress;
+    public void setAge(int age) {
+        this.age = age;
     }
-    
+
     public Date getCreatedOn() {
         return createdOn;
     }
+
+    public void setCreatedOn(Date createdOn) {
+        this.createdOn = createdOn;
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
+    
+    public Person() {
+        this.createdOn = new Date();
+        this.workAddress = new Address();
+        this.homeAddress = new Address();
+    }
+    
+    
     
     @Override
     public String toString() {
